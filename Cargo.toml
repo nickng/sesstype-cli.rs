@@ -1,0 +1,13 @@
+[package]
+name = "sesstype-cli"
+version = "0.1.0"
+authors = ["Nicholas Ng <nickng@nickng.io>"]
+description = "Command line interface for sesstype library"
+readme = "README.md"
+keywords = ["session", "types"]
+categories = ["data-structures", "development-tools"]
+license = "Apache-2.0"
+
+[dependencies]
+getopts = "0.2"
+sesstype = "^0.2.0"
