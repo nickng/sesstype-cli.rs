@@ -77,8 +77,10 @@ fn main() {
                     Some(role) => role,
                     None => panic!("Cannot project global type: role {} not found", &proj_role),
                 };
-                let local = sesstype::project(&global, &role).expect("Cannot project global type");
-                local.to_string()
+                match sesstype::project(&global, &role) {
+                    Some(local) => local.to_string(),
+                    None => String::from("(empty)"),
+                }
             }
             // Return global type otherwise.
             None => global.to_string(),
