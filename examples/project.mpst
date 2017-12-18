@@ -1,0 +1,1 @@
+A->B: {foo(string).A->C:{bar(string).end} , bar(string).A->C:{foo(string).end}  }
