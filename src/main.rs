@@ -144,8 +144,7 @@ fn main() {
                 write_output_file(output, parse.value_of("output"));
             }
         }
-    }
-
+    } else
     // Handle project subcommand.
     //
     // Parse input.mpst as global type and project with respect to R
@@ -171,5 +170,10 @@ fn main() {
                 }
             }
         }
+    } else {
+        println!(
+            "no subcommand specified, use -h to see detailed usage\n{}",
+            matches.usage()
+        )
     }
 }

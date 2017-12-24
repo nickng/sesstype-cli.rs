@@ -16,15 +16,15 @@ cargo build --release
 Parsing the global type
 
 ```
-$ sesstype-cli examples/simple_choice.mpst
+$ sesstype-cli parse examples/simple_choice.mpst
 μT.A → B:{ l().end, l2().T }
 ```
 
 Projecting the global type for role A
 
 ```
-$ sesstype-cli examples/simple_choice.mpst -p A
-μT.A⊕{ !l().end, !l2().T }
+$ sesstype-cli project examples/simple_choice.mpst --role A
+μT.B⊕{ !l().end, !l2().T }
 ```
 
 For more options, use the `-h` flag
