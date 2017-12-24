@@ -9,5 +9,5 @@ categories = ["data-structures", "development-tools"]
 license = "Apache-2.0"
 
 [dependencies]
-getopts = "0.2"
+clap = "2"
 sesstype = "^0.2.0"
